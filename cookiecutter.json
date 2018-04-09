@@ -1,6 +1,6 @@
 {
   "application_name": "Your Application",
-  "project_slug": "{{cookiecutter.application_name.lower().replace(' ', '_')}}",
+  "project_slug": "{{cookiecutter.application_name.replace(' ', '_').replace('-', '_')}}",
   "description": "",
   "runtime_context": ["Standard", "Context", "Menu", "Search"],
   "runtime_prefix": "{% if cookiecutter.runtime_context == 'Standard' %}TCS{% elif cookiecutter.runtime_context == 'Context' %}TCX{% elif cookiecutter.runtime_context == 'Menu' %}TCM{% elif cookiecutter.runtime_context == 'Search' %}TCS{% endif %}",
