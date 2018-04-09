@@ -1,13 +1,13 @@
 <!-- Sidebar -->
-<div class="spaces-sidebar {{visible ? '' : 'hidden'}}">
+<div class="spaces-sidebar \{\{visible ? '' : 'hidden'\}\}">
     <div class="showHide">
-        <span class="fa {{visible ? 'fa-angle-double-left' : 'fa-angle-double-right'}}" (click)="toggleSidebar()" title="Items"></span>
+        <span class="fa \{\{visible ? 'fa-angle-double-left' : 'fa-angle-double-right'\}\}" (click)="toggleSidebar()" title="Items"></span>
     </div>
-    <div class="spaces-sidebar-menu {{visible ? '' : 'hide'}}">
+    <div class="spaces-sidebar-menu \{\{visible ? '' : 'hide'\}\}">
         <div>
             <header>Navigation</header>
             <content>
-                <span class="fa {{pinnedIcon}}" (click)="togglePinned()" title="Pinned">Pin Sidebar While Navigating</span>
+                <span class="fa \{\{pinnedIcon\}\}" (click)="togglePinned()" title="Pinned">Pin Sidebar While Navigating</span>
             </content>
         </div>
         <p-accordion>

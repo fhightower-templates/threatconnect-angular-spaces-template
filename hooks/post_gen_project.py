@@ -1,21 +1,32 @@
-# #!/usr/bin/env python
-# import os
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""Replace escaped jinja formatting."""
 
-# PROJECT_DIRECTORY = os.path.realpath(os.path.curdir)
+import os
+
+PROJECT_DIRECTORY = os.path.realpath(os.path.curdir)
 
 
-# def rename_dir(old_filepath, new_file_path):
-#     os.rename(old_filepath, new_file_path)
+def replace_escaped_formatting(file_path):
+    """Replace escaped jinja formatting in the given file."""
+    full_path = os.path.join(PROJECT_DIRECTORY, file_path)
+    print("here: {}".format(file_path))
+    print("here: {}".format(full_path))
+
+    with open(full_path, 'r') as f:
+        file_text = f.read()
+        file_text = file_text.replace("\{", "{")
+        file_text = file_text.replace("\}", "}")
+        file_text = file_text.replace("\%", "%")
+
+    with open(full_path, 'w') as f:
+        f.write(file_text)
 
 
-# if __name__ == '__main__':
-#     # add the prefix to the directory
-#     if '{{ cookiecutter.runtime_context }}' == 'Standard':
-#         rename_dir('{{ cookiecutter.project_slug }}', '%s_-_{{ cookiecutter.project_slug }}' % 'TCS')
-#     elif '{{ cookiecutter.runtime_context }}' == 'Context':
-#         rename_dir('{{ cookiecutter.project_slug }}', '%s_-_{{ cookiecutter.project_slug }}' % 'TCX')
-#     elif '{{ cookiecutter.runtime_context }}' == 'Menu':
-#         rename_dir('{{ cookiecutter.project_slug }}', '%s_-_{{ cookiecutter.project_slug }}' % 'TCM')
-#     else:
-#         # not sure what to do here... just going to add the standard prefix
-#         rename_dir('{{ cookiecutter.project_slug }}', '%s_-_{{ cookiecutter.project_slug }}' % 'TCS')
+if __name__ == '__main__':
+    for path, dirs, files in os.walk("../{{cookiecutter.runtime_prefix}}_-_{{ cookiecutter.project_slug }}/src/app/"):
+        print("here1: {}, {}, {}".format(path, dirs, files))
+        for file_ in files:
+            if file_.endswith('.html'):
+                print("here: {}, {}, {}".format(path, dirs, files))
+                replace_escaped_formatting(os.path.join(path, file_))
