@@ -1,0 +1,20 @@
+{
+  "application_name": "Your Application",
+  "project_slug": "{{cookiecutter.application_name.lower().replace(' ', '_')}}",
+  "description": "",
+  "runtime_context": {
+    "Standard": {
+        "runtime_prefix": "TCS"
+    },
+    "Context": {
+        "runtime_prefix": "TCX"
+    },
+    "Menu": {
+        "runtime_prefix": "TCM"
+    },
+    "Search": {
+        "runtime_prefix": "TCS"
+    },
+  },
+  "version": "0.1.0"
+}
