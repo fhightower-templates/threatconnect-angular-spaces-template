@@ -4,7 +4,7 @@ var mkdirp = require('mkdirp');
 
 grunt.initConfig({
   app: {
-    name: '{{ cookiecutter.runtime_context.runtime_prefix }}_-_{{ cookiecutter.project_slug }}',
+    name: '{{ cookiecutter.runtime_prefix }}_-_{{ cookiecutter.project_slug }}',
     version: '{{ cookiecutter.version }}'
   },
 
