@@ -5,11 +5,13 @@
 ## Usage
 
 ```
-cookiecutter https://github.com/fhightower-templates/threatconnect-spaces-template.git
+cookiecutter https://github.com/fhightower-templates/threatconnect-angular-spaces-template.git
 ```
 
 ## Details
 
 This app is based on the example app [here](https://github.com/ThreatConnect-Inc/TCX_-_ExampleContextApp).
 
-Feel free to raise an [issue](https://github.com/fhightower-templates/threatconnect-spaces-template/issues) if you find anything wrong or have a suggestion.
+Feel free to raise an [issue](https://github.com/fhightower-templates/threatconnect-angular-spaces-template/issues) if you find anything wrong or have a suggestion.
+
+There is a similar version of this template to create spaces apps using Javascript here: [https://github.com/fhightower-templates/threatconnect-js-spaces-template](https://github.com/fhightower-templates/threatconnect-js-spaces-template).
