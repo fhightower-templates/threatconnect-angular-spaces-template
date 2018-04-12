@@ -2,11 +2,18 @@
 
 {{ cookiecutter.description }}
 
+## Getting Started
+
+To get started, the code for the app is in the `src/` folder. To setup your environment for testing, run:
+
+```
+make setup
+```
+
 ## Build App For Release
 
 ```
-npm install
-grunt buildProd
+make pack
 ```
 
 This will package the app as `target/{{cookiecutter.runtime_prefix}}_-_{{ cookiecutter.project_slug }}.tcx`.
@@ -14,11 +21,11 @@ This will package the app as `target/{{cookiecutter.runtime_prefix}}_-_{{ cookie
 ## Build App in Development Mode (does not minify or uglify code, so it can be debugged in browser)
 
 ```
-npm install
-grunt buildDev
+make pack-dev
 ```
 
 ## Deploy
+
 In the ThreatConnect UI install the App (the `.tcx` file) created in the [Build App for Release](#build-app-for-release) section.
 
 ## Credits
