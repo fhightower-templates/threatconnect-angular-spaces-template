@@ -35,12 +35,6 @@ import { TableModule } from 'primeng/table';
 /* Components */
 import { AppComponent } from './app.component';
 import { MainComponent } from './main.component';
-import { AssociationsComponent } from './components/associations/associations.component';
-import { OwnersComponent } from './components/owners/owners.component';
-import { ParametersComponent } from './components/parameters/parameters.component';
-import { ResourceComponent } from './components/resource/resource.component';
-import { SettingsComponent } from './components/settings/settings.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 /* Services */
 import {
@@ -62,8 +56,6 @@ import {
     TcOwnerService
     // Url
 } from 'threatconnect-ng';
-
-import { SettingsService } from './services/settings.service';
 
 @NgModule({
     imports: [
@@ -92,19 +84,12 @@ import { SettingsService } from './services/settings.service';
     ],
     declarations: [
         AppComponent,
-        MainComponent,
-        SidebarComponent,
-        AssociationsComponent,
-        OwnersComponent,
-        ParametersComponent,
-        ResourceComponent,
-        SettingsComponent
+        MainComponent
     ],
     providers: [
         /* Bowser Service */
         BowserService,
         /* TC Service */
-        SettingsService,
         SpacesBaseService,
         SpacesLoggingService,
         SpacesMessagesService,
