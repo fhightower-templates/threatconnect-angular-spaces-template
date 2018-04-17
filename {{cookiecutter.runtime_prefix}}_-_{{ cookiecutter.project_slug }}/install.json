@@ -40,14 +40,20 @@
     "Host",
     "Url",
     "Adversary",
+    "Campaign",
     "Document",
     "Email",
     "Incident",
     "Signature",
     "Tag",
+    "Task",
     "Threat",
     "Victim"
   ],
+  {% elif cookiecutter.runtime_context == 'Menu' %}
+  "runtimeContext": ["Menu"],
+  {% elif cookiecutter.runtime_context == 'Search' %}
+  "runtimeContext": ["Search"],
   {% else %}
   "runtimeContext": [],
   {% endif %}
