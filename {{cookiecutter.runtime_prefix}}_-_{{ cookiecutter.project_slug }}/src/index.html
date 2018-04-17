@@ -4,6 +4,10 @@
     <title>{{ cookiecutter.application_name }}</title>
     <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% if cookiecutter.use_zurb_foundation == 'y' %}<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <!-- Zurb Foundation imports -->
+    <script src="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.4/foundation.min.css">{% endif %}
   </head>
 
 <body class="tc">

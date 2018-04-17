@@ -11,6 +11,7 @@ import {
     SpacesMessagesService,
 } from 'spaces-ng/';
 
+{% if cookiecutter.use_zurb_foundation == 'y' %}declare var $:any{% endif %}
 
 @Component({
     templateUrl: './main.component.html',
@@ -28,5 +29,6 @@ export class MainComponent implements OnInit {
 
     ngOnInit() {
         this.messages.showSuccess('Success Message', 'This is the start of something great!');
+        {% if cookiecutter.use_zurb_foundation == 'y' %}$(document).foundation();{% endif %}
     }
 }
