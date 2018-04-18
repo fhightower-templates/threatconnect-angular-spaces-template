@@ -1,6 +1,6 @@
 # ThreatConnect Angular Spaces App Template
 
-**NOTE:** This app is **not** supported by ThreatConnect. While I attempt to keep it up to date and working well, you use it at your own risk.
+**NOTE:** This app is **not** supported by ThreatConnect. While I'll attempt to keep it up to date and working well, please use at your own risk!
 
 *Create a ThreatConnect spaces app in less than 30 seconds.*
 
