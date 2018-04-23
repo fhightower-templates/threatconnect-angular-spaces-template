@@ -70,3 +70,21 @@ app.component.spec.ts  app-routing.module.ts
 
 - **main.component.html**     (Spaces app main html page)
 - **main.component.ts**       (Spaces app main typescript)
+
+## Development and Production Testing
+
+You'll also want to be able to build out your angular app and test it out during development and production.
+
+*Note: in the development build, files are not minify or condensed, allowing easier debugging in your browser*
+
+Development:
+
+```bash
+grunt buildDev
+```
+
+Production:
+
+```bash
+grunt buildProd
+```
