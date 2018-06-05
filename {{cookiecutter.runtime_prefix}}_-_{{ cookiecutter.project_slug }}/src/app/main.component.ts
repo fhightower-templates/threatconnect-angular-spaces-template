@@ -31,4 +31,8 @@ export class MainComponent implements OnInit {
         this.messages.showSuccess('Success Message', 'This is the start of something great!');
         {% if cookiecutter.use_zurb_foundation == 'y' %}$(document).foundation();{% endif %}
     }
+         
+    goTo(routePath: string) {
+        this.router.navigate([routePath]);
+    }
 }
