@@ -32,8 +32,7 @@
   }],
   "programLanguage": "NONE",
   "programVersion": "{{ cookiecutter.version }}",
-  {% if cookiecutter.runtime_context == 'Context' %}
-  "runtimeContext": [
+  {% if cookiecutter.runtime_context == 'Context' %}"runtimeContext": [
     "Address",
     "EmailAddress",
     "File",
@@ -49,13 +48,6 @@
     "Task",
     "Threat",
     "Victim"
-  ],
-  {% elif cookiecutter.runtime_context == 'Menu' %}
-  "runtimeContext": ["Menu"],
-  {% elif cookiecutter.runtime_context == 'Search' %}
-  "runtimeContext": ["Search"],
-  {% else %}
-  "runtimeContext": [],
-  {% endif %}
+  ],{% elif cookiecutter.runtime_context == 'Menu' %}"runtimeContext": ["Menu"],{% elif cookiecutter.runtime_context == 'Search' %}"runtimeContext": ["Search"],{% else %}"runtimeContext": [],{% endif %}
   "runtimeLevel": "SpaceOrganization"
 }
