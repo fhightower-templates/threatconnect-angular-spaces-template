@@ -4,6 +4,13 @@
 
 ## Getting Started
 
+0. Clone the repo
+
+```
+git clone <LINK TO THIS REPO>
+cd  <REPO NAME>
+```
+
 1. Setup your environment for testing:
 
 ```
