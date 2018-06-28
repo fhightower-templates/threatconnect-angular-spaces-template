@@ -1,5 +1,9 @@
 # ThreatConnect Angular Spaces App Template
 
+PROJECT MOVED TO GITLAB: https://gitlab.com/fhightower-templates.
+
+-----
+
 **NOTE:** This app is **not** supported by ThreatConnect. While I'll attempt to keep it up to date and working well, please use at your own risk!
 
 *Create a ThreatConnect spaces app in less than 30 seconds.*
